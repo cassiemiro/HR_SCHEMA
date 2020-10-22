@@ -1,29 +1,30 @@
 {
-  "name": "school_system",
+  "name": "HR_SCHEMA",
   "version": "1.0.0",
-  "description": "Backend of School System",
+  "description": "HR_SCHEMA",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon --exec node src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cassiemiro/school_system.git"
+    "url": "git+https://github.com/cassiemiro/HR_SCHEMA.git"
   },
   "keywords": [
-    "school_system"
+    "HR_SCHEMA"
   ],
   "author": "cassiemiro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cassiemiro/school_system/issues"
+    "url": "https://github.com/cassiemiro/HR_SCHEMA/issues"
   },
-  "homepage": "https://github.com/cassiemiro/school_system#readme",
+  "homepage": "https://github.com/cassiemiro/HR_SCHEMA#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "oracledb": "^5.0.0",
     "path": "^0.12.7",
-    "pg": "^8.4.1"
+    "process": "^0.11.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.5"
