@@ -5,18 +5,6 @@ const process = require('process')
 
 connect()
 
-process.on('SIGINIT', async () => {
-  try {
-    disconnect()
-    console.log('Desconectado!')
-  } catch (err) {
-    console.log('ERRRR', err)
-  }
-  if (i_should_exit) {
-    process.exit(0)
-  }
-})
-
 app.get("/departments", async (req, res) => {
   const result = await query(`SELECT * FROM departments`, []);
   return res.json(result.rows);
@@ -67,4 +55,4 @@ process.on("SIGINIT", async function () {
 });
 
 
-app.listen(3000)
+app.listen(process.env.PORT)
