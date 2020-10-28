@@ -8,36 +8,43 @@ connect()
 
 app.get("/departments", async (req, res) => {
   const result = await query(`SELECT * FROM departments`, [])
+  console.log('GET departments')
   return res.json(result.rows)
 })
 
 app.get("/employees", async (req, res) => {
   const result = await query(`SELECT * FROM employees`, [])
+  console.log('GET employees')
   return res.json(result.rows)
 })
 
 app.get("/jobs", async (req, res) => {
   const result = await query(`SELECT * FROM jobs`, [])
+  console.log('GET jobs')
   return res.json(result.rows)
 })
 
 app.get("/countries", async (req, res) => {
   const result = await query(`SELECT * FROM countries`, [])
+  console.log('GET countries')
   return res.json(result.rows)
 })
 
 app.get("/locations", async (req, res) => {
   const result = await query(`SELECT * FROM locations`, [])
+  console.log('GET locations')
   return res.json(result.rows)
 })
 
 app.get("/regions", async (req, res) => {
   const result = await query(`SELECT * FROM regions`, [])
+  console.log('GET regions')
   return res.json(result.rows)
 })
 
 app.get("/job_history", async (req, res) => {
   const result = await query(`SELECT * FROM job_history`, [])
+  console.log('GET history')
   return res.json(result.rows)
 })
 

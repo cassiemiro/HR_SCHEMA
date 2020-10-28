@@ -17,7 +17,7 @@ const connect = async () => {
 
     console.log('Conexão com Banco de Dados estabelecida!')
     const result = await connection.execute(`SELECT first_name FROM EMPLOYEES WHERE employee_id = :id`, [100])
-    console.log('QUERY TEST RESULT:', result.rows)
+    // console.log('QUERY TEST RESULT:', result.rows)
   } catch (err) {
     console.log('ERROR ON CONNECT:', err)
   }
